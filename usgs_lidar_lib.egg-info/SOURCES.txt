@@ -1,0 +1,6 @@
+README.md
+setup.py
+usgs_lidar_lib.egg-info/PKG-INFO
+usgs_lidar_lib.egg-info/SOURCES.txt
+usgs_lidar_lib.egg-info/dependency_links.txt
+usgs_lidar_lib.egg-info/top_level.txt
