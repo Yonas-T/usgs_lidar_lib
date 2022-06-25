@@ -1,0 +1,50 @@
+{
+    "pipeline": [
+      {
+        "bounds": "",
+        "filename": "",
+        "type": "readers.ept",
+        "tag": "readdata"
+      },
+      {
+          "inputs": [ "readdata" ],
+          "polygon": "",
+          "type": "filters.crop",
+           "tag": "crop"
+  
+      },
+      {
+        "limits": "Classification![2:2]",
+        "inputs": [ "crop" ],
+        "type": "filters.range",
+        "tag": "nonoise"
+      },
+  
+      {
+        "assignment": "Classification[:]=0",
+        "tag": "wipeclasses",
+        "type": "filters.assign"
+      },
+      {
+          "tag": "groundify",
+          "type": "filters.smrf"
+      },
+      {
+          "limits": "Classification[2:2]",
+          "type": "filters.range",
+          "tag": "classify"
+      },
+      {
+        
+        "in_srs":"EPSG:3857 ",
+        "out_srs": "",
+        "tag": "reprojection",
+        "type": "filters.reprojection"
+  
+      }
+          
+     
+  
+     
+    ]
+  }
