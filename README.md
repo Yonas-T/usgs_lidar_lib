@@ -38,8 +38,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]
-
 usgs_lidar_lib is an open-source python package for retrieving, transforming, and visualizing point cloud data obtained through an aerial LiDAR survey. The package will accept boundary polygons and a coordinate reference system (CRS) and return a python dictionary with all years of data available and a geopandas grid point file with elevations encoded in the requested CRS. 
 
 
