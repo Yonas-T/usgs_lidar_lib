@@ -45,7 +45,7 @@ usgs_lidar_lib is an open-source python package for retrieving, transforming, an
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This project is built mainly with the following python libraries.
 
 1. Pdal
 2. laspy
@@ -62,8 +62,6 @@ Creating a conda environment
   ```
 
 ### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
 1. Clone the repo
    ```sh
